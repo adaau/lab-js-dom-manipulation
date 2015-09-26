@@ -1,11 +1,11 @@
 window.onload = function () {
-
+/* BASIC CALC */
 function getValue(id) {
   return document.getElementById(id).value;
 }
 
 function getFloat(id) {
-  parseFloat(getValue(id));
+  return parseFloat(getValue(id));
 }
 
 function setHtml(id, html) {
@@ -35,10 +35,21 @@ function basicCalc() {
   	  console.log("Check")
   }
 
-  var message = num1 + " " + oper + " = " + ans;
-  setHtml("basic-answer-alert", "message")
+  var message = num1 + " " + oper + " " + num2 + " = " + ans;
+  setHtml("basic-answer-alert", message)
 }
 
-document.getElementById("basic-calc").onClick = basicCalc;
+document.getElementById("basic-calc").addEventListener("click", basicCalc);
 
+
+/* TRIP CALC */
+
+
+
+
+
+
+
+
+/* this curly bracket goes with window.onload function and ends the program*/
 }
